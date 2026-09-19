@@ -54,7 +54,7 @@ export default function FarmerInterface() {
       }
 
       // Otherwise, call your Flask backend to translate each text line into Marathi
-      const response = await fetch("http://127.0.0.1:5000/api/translate", {
+      const response = await fetch("https://agrishield-api-cser.onrender.com/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
