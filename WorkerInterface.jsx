@@ -20,7 +20,7 @@ export default function WorkerInterface() {
   useEffect(() => {
     const fetchMapData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/api/map-alerts");
+        const response = await fetch("https://agrishield-api-cser.onrender.com/api/map-alerts");
         if (!response.ok) throw new Error("Failed to fetch");
         const data = await response.json();
         setAlerts(data);
